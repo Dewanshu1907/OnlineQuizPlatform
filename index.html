@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizKu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: rgb(1, 1, 43);" id="particles-js">
+  <main id="container">
+    <!-- Start Container -->
+    <div class="start_container">
+      <div class="start_btn"><button>Start Quiz</button></div>
+      <div class="leaderboard"><button>Leaderboard</button></div>
+    </div>
+
+    <!-- Name Input Box -->
+    <div class="name_box">
+      <input type="text" class="name" placeholder="What's your name?" />
+      <input type="button" class="name_btn" value="Okay! Let's Begin" />
+    </div>
+
+    <!-- Instructions -->
+    <div class="instructions">
+      <div class="info_title">
+        <span>Rules in this Quiz</span>
+      </div>
+      <div class="info_list">
+        <!-- List of instructions -->
+        <div class="info">
+          1. You only have <span>15 seconds</span> for each question.
+        </div>
+        <div class="info">
+          2. Once you choose your answer, you can't change it.
+        </div>
+        <div class="info">
+          3. You can't select any option after time runs out.
+        </div>
+        <div class="info">
+          4. You can't exit the quiz while playing.
+        </div>
+        <div class="info">
+          5. After you're done, click "Submit Score" to enter the leaderboard.
+        </div>
+      </div>
+      <div class="buttons">
+        <!-- Quit and Restart buttons -->
+        <button class="quit">Give Up</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Math Quiz Section -->
+    <div class="math-quiz">
+      <header>
+        <div class="title">Math Quiz</div>
+        <div class="timer">
+          <div class="time_text">Remaining Time</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div>
+          <span id="questions">
+            <!-- Display math question -->
+            <p id="num1"></p> X <p id="num2"></p>
+          </span>
+        </div>
+        <div class="option_list">
+          <!-- List of answer options -->
+          <div class="option" id="option1"></div>
+          <div class="option" id="option2"></div>
+          <div class="option" id="option3"></div>
+          <div class="option" id="option4"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="points">
+          <div class="point_text">Your Score</div>
+          <div class="point_no">0</div>
+        </div>
+        <button class="next_btn">Show Results</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div>
+        Highest Score:
+        <p>2053 Points</p>
+      </div>
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">
+        Congratulations! You successfully completed the quiz.
+      </div>
+      <div class="score_text"></div>
+      <div class="buttons">
+        <!-- Restart and Quit buttons -->
+        <button class="restart">Submit My Score</button>
+        <button class="quit">Play Again</button>
+      </div>
+    </div>
+  </main>
+  <a
+    id="leaderboard_link"
+    href="https://drive.google.com/file/d/1m0WULlae5pYoBCkdNt1zS-QC65aSoot_/view?usp=sharing"
+    target="_blank"
+  ></a>
+  <a id="link" target="_blank"></a>
+  <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+</html>
+
